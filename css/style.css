@@ -1,0 +1,512 @@
+@font-face {
+    font-family:"Roboto Light";
+    src:url("../fonts/Roboto-Light.eot?") 
+        format("eot"),url("../fonts/Roboto-Light.woff") 
+        format("woff"),url("../fonts/Roboto-Light.ttf") 
+        format("truetype"),url("../fonts/Roboto-Light.svg#Roboto-Light") 
+        format("svg");font-weight:normal;font-style:normal;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url(../images/bg_three.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Roboto Light";
+}
+
+.Gradient{
+    width: 100%;
+    background: #418cff; /* For browsers that do not support gradients */
+    background: linear-gradient(rgba(255,0,0,0), #418cff 60%);
+}
+
+.container{
+    width: 800px;
+    height: 662;
+    margin: 0px auto;
+    z-index: 1;
+}
+
+.head{
+    width: 800px;
+    height: 125px;
+}
+
+.body_container{
+    overflow: hidden;
+}
+
+.sub_container{
+    width: 860px;
+    height: 470px;
+    overflow-y: scroll;
+    padding-right: 20px; 
+}
+
+.footer{
+    width: 796px;
+    height: 64px;
+    background-color: whitesmoke;
+    border: 1px solid whitesmoke;
+}
+
+img{
+    width: 200px;
+    margin: 40px 300px;
+}
+
+#adding_events{
+    width: 798px;
+    height: 320px;
+    display: none;
+}
+
+.new_title_container{
+    width: 800px;
+    color: white;
+    font-size: 18px;
+}
+
+.add_event_container{
+    width: 795px;
+    height: 225px;
+    color: white;
+    margin-top: 10px;
+    z-index: 999;
+    display: none;
+}
+
+.input_carrier{
+    width: 230px;
+    height: 167px;
+    position: relative;
+    float: left;
+    margin-left: 45px;
+    margin-top: 25px;
+    font-size: 17px;
+}
+
+input{
+    width: 200px;
+    background-color: #408bfe;
+    border: none;
+    height: 35px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    color: white;
+    font-size: 18px;
+    padding-left: 2px;
+}
+
+.right{
+    width: 200px;
+    height: 167px;
+    float: left;
+    position: relative;
+    margin-left: 20px;
+}
+
+.one{
+    height: 35px;
+    width: 2px;
+    background-color: #408bfe;
+    margin-left: 29px;
+    transform: rotate(36deg);
+    Z-index: 1;
+    margin-top: 12px;
+}
+
+.two{
+    height: 35px;
+    width: 2px;
+    background-color: #408bfe;
+    transform: rotate(143deg);
+    Z-index: 2;
+    margin-top: -35px;
+    margin-left: 29px;
+}
+#submit_event{
+    width: 130px;
+    height: 28px;
+    margin: 90px 35px;
+    background-color: #408bfe;
+    text-align: center;
+    padding-top: 8px;
+    cursor: pointer;
+}
+
+.current_container{
+    width: 795px;
+    height: auto;
+}
+
+.today{
+    color: white;
+    font-size: 18px;
+}
+
+.todayz_events{
+    width: 795px;
+    height: 100px;
+    margin-top: 10px;
+    border: 1px solid #c4cbd6;
+    background-color: rgba(49, 122, 235, 0.49);
+}
+
+.todayz_events:hover{
+    
+}
+
+.date_holder{
+    width: 90px;
+    height: 80px;
+    margin: 10px;
+    border-right: 1px solid white;
+    position: relative;
+    float: left;
+}
+
+.margin{
+    border-right: 1px solid #5b5b5b;
+}
+.month{
+    width: 50px;
+    height: 18px;
+    margin: auto;
+    text-align: center;
+    color: #ca4817;
+}
+
+.date{
+    width: 50px;
+    height: 40px;
+    margin: auto;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+.year{
+    width: 50px;
+    height: 18px;
+    margin: auto;
+    text-align: center;
+    color: #e5901d;
+}
+
+.info_carrier{
+    width: 580px;
+    height: 60px;
+    position: relative;
+    float: left;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.event_title{
+    width: 580px;
+    height: 24px;
+    font-size: 20px;
+    padding-top: 2px;
+    color: white;
+}
+
+.hoster{
+    width: 580px;
+    height: 29px;
+    font-size: 18px;
+    padding-top: 5px;
+    color: white;
+}
+
+#delete{
+    float: left;
+    position: relative;
+    background-color: #d8ddde;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    margin-top: 33px;
+    color: grey;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#delete:hover{
+    background-color: #fa907c;
+    color: white;
+}
+
+.fa{
+    margin-top: 7px;
+}
+
+.upcoming_container{
+    width: 795px;
+    height: auto;
+    margin-top: 50px;
+}
+
+.white{
+    background-color: white;
+}
+
+.timeline_title{
+    color: white;
+    font-size: 18px;
+}
+
+select{
+    background-color: rgba(64, 139, 254, 0);
+    color: white;
+    font-size: 17px;
+    border: none;
+    font-family: "Roboto Light";
+}
+
+option{
+    color: #ca4817;
+    font-family: "Roboto Light";
+}
+
+.upcoming_events{
+    width: 795px;
+    height: 100px;
+    margin-top: 10px;
+    border: 1px solid #c4cbd6;
+    background-color: rgba(49, 122, 235, 0);
+}
+#upcoming_events{
+    width: 795px;
+    height: 100px;
+    margin-top: 10px;
+    border: 1px solid white;
+    background-color: rgba(49, 122, 235, 0.49);
+}
+
+#info_carrier{
+    width: 446px;
+    height: 60px;
+    position: relative;
+    float: left;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.with_white{
+    background-color: white;
+}
+#upcoming_events.with_white{
+    background-color: white;
+}
+.hide_border{
+    border-left: 0px solid rgba(64, 139, 254, 0);
+}
+.with_blue{
+    color: #408bfe;
+}
+.with_black{
+    color: #5b5b5b;
+}
+.with_grey{
+    color: #5b5b5b;
+}
+.with_border{
+    border-right: 1px solid #5b5b5b;
+    width: 90px;
+}
+.unique{
+    margin-bottom: 10px;
+}
+.untill{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    float: left;
+    text-align: center;
+    top: 37px;
+    color: #5b5b5b;
+}
+
+#circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: -27px 372px;
+    background-color: white;
+    border: 1px solid white;
+    box-shadow: 0px 0px 10px 0.5px rgba(153,147,153,0.2);
+    position: absolute;
+}
+
+.vertical{
+    height: 25px;
+    width: 2px;
+    background-color: #408bfe;
+    margin-left: 24px;
+    transform: rotate(0deg);
+    Z-index: 1;
+    margin-top: -38px;
+}
+
+.holizontal{
+    height: 25px;
+    width: 2px;
+    background-color: #408bfe;
+    transform: rotate(90deg);
+    Z-index: 2;
+    margin-top: -25px;
+    margin-left: 24px;
+}
+
+.pulse{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin: 0px auto;
+    background-color: #464545;
+    position: relative;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse{
+    0%{
+        transform: scale(0);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1.3);
+        opacity: 0;
+        }
+}
+
+#display_inputs{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin: -25px auto;
+    background-color: white;
+    border: 1px solid white;
+    position: relative;
+}
+
+.grow{
+    animation: mymove 400ms;
+    border-radius: 50%;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mymove {
+    0%   {top: 0; background: #fff; left: auto}
+    100% {top: -417; width: 795px; border-radius: 0%; left: auto; height: 225px; background: rgba(49, 122, 235, 0.49);}
+}
+
+.submit{
+    animation: myline 2s 3;
+    border-radius: 50%;
+}
+
+@keyframes myline {
+    0%   {top: 0px; background: white; width: 100px;}
+    100% {margin-top: -250px; background: skyblue; width: 800px; border-radius: 0%;}
+}
+
+.fade{
+    animation: opacity 3s;
+    animation-delay: 2s;
+    z-index: 999;
+    display: block;
+}
+            
+@keyframes opacity {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.double_fill{
+                background-color: whitesmoke;
+                width: 795px;
+                height: 2px;
+                position: absolute;
+                animation: fill 3s;
+                margin-top: 222px;
+                margin-left: 2px;
+                display: none;
+                animation-fill-mode: forwards;
+                
+            }
+            
+            @keyframes fill {
+                0%{
+                    width: 0px;
+                }
+                100%{
+                    width: 795px;
+                }
+            }
+
+.smooth_slide{
+    animation: slide 100ms;
+}
+            
+@keyframes slide{
+    0%{height: 0}
+    100%{height: 320}
+}
+
+.loading{
+    animation: load 100ms;
+}
+            
+@keyframes load{
+    0%{height: 225px}
+    100%{height: 100px}
+}
+
+#close{
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    float: right;
+    margin-top: -29px;
+    background-color: white;
+    animation-delay: 2s;
+    display: none;
+    animation: roll 2s 1;
+    transform: rotate ;
+}
+
+#close:hover{
+    cursor: pointer;
+}
+
+@keyframes roll {
+  0%{
+    transform: rotate(0);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(720deg);
+    opacity: 1;
+  }
+}
+
+.alert{
+    animation-fill-mode: both;
+    animation: flash 600ms 2;
+    background-color: red;
+    transition-timing-function: cubic-bezier(0,.67,1,.57);
+    }
+         
+@keyframes flash {
+    0%, 100% {
+    opacity: 1;
+    }
+    50% {
+    opacity: 0;
+    }
+}
